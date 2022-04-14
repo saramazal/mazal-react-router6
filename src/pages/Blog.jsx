@@ -1,17 +1,13 @@
-import React from 'react'
-
-import {
-  useState,
-  useEffect
-} from 'react';
-import {
-  Link,
-  useLocation
-} from 'react-router-dom'
+import { useState, useEffect } from 'react';
+import { Link, useSearchParams } from 'react-router-dom'
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
-  console.log(useLocation([]))
+  const [searchParams, setSearchParams] = useState();
+   
+const postquery = searchParams.get('post') || '';
+
+
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
