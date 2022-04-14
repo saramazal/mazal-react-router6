@@ -77,8 +77,8 @@ form {
 justify-content: center;
  
 }
-label {
- 
+.latest {
+ padding: 1em;
 }
 input {
   padding: 4px 42px;
