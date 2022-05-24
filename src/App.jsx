@@ -25,7 +25,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='projects' element={<Projects />} />
-          <Route path='projects-art' element={<Navigate to='/projects' replace />} />
+          <Route path='projects-codepen' element={<Navigate to='/projects' replace />} />
           <Route path='skills' element={<Skills />} />
           <Route path='posts' element={<Blog />} />
           <Route path='posts/:id' element={<SinglePage />} />
