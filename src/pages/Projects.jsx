@@ -1,12 +1,19 @@
 import React from 'react'
-import { Route, Routes, Link } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 
 
 export default function Projects() {
   return (
-    <div><h1>Projects</h1>
-    <Routes><Route to="projects/codepen" element={<h1>My Codepen</h1>}></Route>
-    </Routes>
+    <div><h1>My Projects</h1>
+    <ul>
+      <li><Link className="links" to="static">Static </Link></li>
+      <li><Link className="links" to="react">React</Link></li>
+      <li><Link className="links" to="express">Express</Link></li>
+      <li><Link className="links" to="fullstack">Fullstack</Link></li>
+      <li><Link className="links" to="codepen">Codepen</Link></li>
+
+    </ul>
+    <Outlet />
     
     </div>
   )
