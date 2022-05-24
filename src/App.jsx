@@ -24,7 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path='projects/*' element={<Projects />}>
+          <Route path='projects' element={<Projects />}>
             <Route path="static" element={<h2>HTML, CSS, JS</h2>} />
             <Route path="react" element={<h2>React Projects</h2>} />
             <Route path="express" element={<h2>Express Projects</h2>} />
