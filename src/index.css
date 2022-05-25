@@ -107,7 +107,8 @@ footer {
 
 ul {
   list-style: none;
-  
+  flex-direction: row;
+justify-content: center;
 }
 .links {
   color: var(--color-header-bg);
